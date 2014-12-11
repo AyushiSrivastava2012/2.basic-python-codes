@@ -1,0 +1,7 @@
+a=int(raw_input())
+b=int(raw_input())
+c=(a,b)
+a=c[1]
+b=c[0]
+print a
+print b
