@@ -1,0 +1,12 @@
+n=int(raw_input())
+s=set(map(int,raw_input().split()))
+m=int(raw_input())
+a=set(map(int,raw_input().split()))
+k=a.difference(s)
+t=s.difference(a)
+k=k.union(t)
+h=[]
+h=list(k)
+h.sort()
+for i in range(len(h)):
+    print h[i]
