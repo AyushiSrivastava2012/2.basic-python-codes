@@ -1,0 +1,26 @@
+n=int(raw_input())
+a=[]
+for i in range(n):
+    s=raw_input()
+    v=float(raw_input())
+    a.append([s,v])
+a.sort(key= lambda marks: marks[1])
+l=a[0][1]
+j=0
+#print l,a
+for i in range(n):
+    if l==a[i][1]:
+        j=j+1
+    else:
+        break
+l=a[j][1]
+s=[]
+#print l,s
+for k in range(j,n):
+    if l==a[k][1]:
+        s.append(a[k])
+    else:
+        break
+s.sort(key= lambda name: name[0])
+for i in range(len(s)):
+    print s[i][0]
