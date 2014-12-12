@@ -5,6 +5,7 @@ for i in range(n):
     v=float(raw_input())
     a.append([s,v])
 a.sort(key= lambda marks: marks[1])
+#to sort in descending order write a.sort(reverse=true)
 l=a[0][1]
 j=0
 #print l,a
